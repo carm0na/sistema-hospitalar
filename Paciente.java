@@ -1,7 +1,6 @@
 package SistemaHospitalar;
-
 import java.util.Scanner;
-import java.util.ArrayList;
+
 class Paciente {
     private String nome;
     private String cpf;
@@ -12,32 +11,29 @@ class Paciente {
 
     Scanner scanner = new Scanner(System.in);
 
-    // Métodos de cadastro do paciente
-    public void setNome() {
-        System.out.println("Digite o nome: ");
-        nome = scanner.nextLine();
+    // Métodos de cadastro do paciente (setters e getters)
+
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
-    public void setCpf() {
-        System.out.println("Digite o CPF: ");
-        cpf = scanner.nextLine();
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
     }
 
-    public void setTelefone() {
-        System.out.println("Digite o telefone: ");
-        telefone = scanner.nextLine();
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
     }
 
-    public void setEndereco() {
-        System.out.println("Digite o endereço: ");
-        endereco = scanner.nextLine();
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
     }
 
-    public void setSintomas() {
-        System.out.println("Principais sintomas: ");
-        sintomas = scanner.nextLine();
+    public void setSintomas(String sintomas) {
+        this.sintomas = sintomas;
     }
 
+    // Método de cadastro do risco
     public void setRisco() {
         while (true) {
             try {
